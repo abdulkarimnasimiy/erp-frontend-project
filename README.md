@@ -1,16 +1,87 @@
-# React + Vite
+# 🏪 Store ERP — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Store ERP** — bu kichik va o‘rta savdo do‘konlari uchun mo‘ljallangan
+**ombor, savdo va tovar harakati**ni boshqaruvchi ERP tizimining
+frontend qismi MVP.
 
-Currently, two official plugins are available:
+Loyiha real magazin logikasiga asoslangan va portfolio uchun ishlab chiqilgan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live demo (Netlify):**  
+👉 https://market-erp.netlify.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Asosiy imkoniyatlar
 
-## Expanding the ESLint configuration
+### 📦 Tovarlar (Products)
+- 20 ta demo mahsulot
+- Kategoriya, shtrixkod, narx
+- Qoldiq (остаток) va minimal qoldiq
+- Avtomatik status:
+  - ✅ OK
+  - ⚠️ Нужен заказ (min. qoldiqdan tushsa)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔍 Qidiruv va filterlar
+- Nom yoki shtrixkod bo‘yicha qidiruv
+- Narx bo‘yicha filter (dan / gacha)
+- Saralash:
+  - Nomi A–Z / Z–A
+  - Qoldiq bo‘yicha
+
+### 🔄 Tovar harakati (Движение товара)
+- Har bir mahsulot bo‘yicha:
+  - 📉 Sotuv (расход)
+  - 📈 Kirim (приход)
+- Modal oynada to‘liq tarix:
+  - Sana
+  - Amal turi
+  - Miqdor
+  - Oldingi va yangi qoldiq
+
+### 🛒 Savdo (Sales)
+- Mahsulot sotish
+- Qoldiq avtomatik kamayadi
+- Har bir sotuv harakatlar tarixiga yoziladi
+
+### 📥 Kirim (Stock In)
+- Buyurtmalar bo‘yicha kirim
+- Manual kirim (omborga qo‘shish)
+- Qoldiq avtomatik yangilanadi
+
+---
+
+## 🧠 Texnologiyalar
+
+- ⚛️ **React (Vite)**
+- 🧰 **Redux Toolkit**
+- 🎨 **Tailwind CSS**
+- 🌐 **Netlify** (deploy)
+- 🗂 Git & GitHub
+
+---
+
+## 🗺 Loyiha strukturasi
+
+src/
+├─ pages/ # Sahifalar (Products, Sales, StockIn)
+├─ components/ # UI komponentlar va modal oynalar
+├─ store/ # Redux store
+├─ slices/ # productsSlice, ordersSlice, movements
+├─ selectors/ # Filter va sort selectorlar
+
+---
+
+## 📌 Maqsad
+
+- Frontend ERP arxitekturasini ko‘rsatish
+- Real biznes logikani frontendda modellashtirish
+- Backend (Django) bilan integratsiyaga tayyor struktura
+
+---
+
+## 👨‍💻 Muallif
+
+**Abdulkarim**  
+Frontend Developer  
+
+Agar loyiha yoqsa ⭐ bosishni unutmang 🙂
