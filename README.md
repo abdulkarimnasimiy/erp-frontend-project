@@ -63,11 +63,11 @@ Loyiha real magazin logikasiga asoslangan va portfolio uchun ishlab chiqilgan.
 ## 🗺 Loyiha strukturasi
 
 src/
-├─ pages/ # Sahifalar (Products, Sales, StockIn)
-├─ components/ # UI komponentlar va modal oynalar
-├─ store/ # Redux store
-├─ slices/ # productsSlice, ordersSlice, movements
-├─ selectors/ # Filter va sort selectorlar
+- pages/ # Sahifalar (Products, Sales, StockIn)
+- components/ # UI komponentlar va modal oynalar
+- store/ # Redux store
+- slices/ # productsSlice, ordersSlice, movements
+- selectors/ # Filter va sort selectorlar
 
 ---
 
